@@ -1,0 +1,49 @@
+***Autodocumentation Docstring Template***
+
+***Function Template***
+
+def <your_function>(<parameter1>,<parameter2>)
+	''' <Write a summary here> 
+
+	Parameters
+	----------
+	<parameter1>: <type>
+		<Description>
+	<parameter2>: <type>
+		<Description>
+
+	Returns
+	-------
+	<return>
+		<description>
+        
+    Usage examples:  #this is the autotest portion
+    >>> <your function>(<parameter1>, <parameter2>) #test1
+    <expected result>
+    >>> <your function>(<parameter1>, <parameter2>) #test2
+    <expected result>
+    >>> <your function>(<parameter1>, <parameter2>) #test3
+    <expected result>
+	'''
+
+***Class Template***
+class <your_class>:
+	''' <Description>
+
+	...
+
+	Attributes
+	----------
+	<attribute1>: <type>
+		<description>
+	<attribute2>: <type>
+		<description>
+	<attribute3>: <type>
+		<description>
+
+	Methods
+	-------
+	<Method1>
+    
+    '''
+		
