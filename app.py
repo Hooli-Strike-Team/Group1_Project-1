@@ -198,19 +198,19 @@ def test_get():
 @app.route('/')
 def home():
     # If 'username' is in the session, display the modal window
-    if 'username' in session:
-        username = session['username']
-        db = sqlite3.connect(db_path)
-        cursor = db.cursor()
-        cursor.execute("SELECT * FROM Games_In_Progress WHERE Username = ?", (username,))
-        results = cursor.fetchall()
-        db.close()
+#     if 'username' in session:
+#         username = session['username']
+#         db = sqlite3.connect(db_path)
+#         cursor = db.cursor()
+#         cursor.execute("SELECT * FROM Games_In_Progress WHERE Username = ?", (username,))
+#         results = cursor.fetchall()
+#         db.close()
       
-        if results:
-          return render_template('home.html', show_logged_in_content=True, show_resume_game=True)
-        else:
-          return render_template('home.html', show_logged_in_content=True, show_resume_game=False)
-    else:
+#         if results:
+#           return render_template('home.html', show_logged_in_content=True, show_resume_game=True)
+#         else:
+#           return render_template('home.html', show_logged_in_content=True, show_resume_game=False)
+#     else:
         return render_template('home.html', show_logged_in_content=False)
 
     
