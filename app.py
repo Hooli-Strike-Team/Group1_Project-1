@@ -7,8 +7,8 @@ import psycopg2
 from flask import Flask, url_for, render_template, redirect, session, g, request, jsonify, render_template_string
 from functools import wraps
 # from flask_sqlalchemy import SQLAlchemy
-DATABASE="/mnt/data/controller_db"
-db_path = "/mnt/data/settings_test_db"
+DATABASE="./SQL/controller_db"
+db_path = './SQL/settings_test_db'
 
 # Create app to use in Flask application
 app = Flask(__name__)
