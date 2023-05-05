@@ -1,7 +1,8 @@
-import prefix
+#import prefix
 import os
 import sqlite3
 import logging
+import psycopg2
 
 from flask import Flask, url_for, render_template, redirect, session, g, request, jsonify, render_template_string
 from functools import wraps
